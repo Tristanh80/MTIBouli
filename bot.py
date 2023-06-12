@@ -55,7 +55,7 @@ async def check_quoi(message):
     q = check_quoi_message(message)
     if q:
         id = dotenv.dotenv_values(".env")["PINGID"]
-        await message.channel.send(":notremaitreatous: <@" + id + "> - YOUR TIME ! :notremaitreatous:")
+        await message.channel.send("<@" + id + "> - YOUR TIME !")
         f = open("log.txt", "a")
         f.write(
             "Quoi : Message from {0.author}: {0.guild} - {0.channel}: {0.content}\n".format(
