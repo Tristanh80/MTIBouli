@@ -41,11 +41,7 @@ async def check_feur(message):
     if b:
         await message.add_reaction("\U000026A0")
         await message.channel.send("Et tu te crois drôle en plus...")
-<<<<<<< HEAD
-        await message.channel.send(file=discord.File("adrian.png"))
-=======
         await message.channel.send(file=discord.File("40985A72E8E05E30D232752D483AC8DB04226D36631DD31D98D11177CD1EF46833BDF582AD2C5029C0838C02C65959C1FEF44552EAB6D92117AB64F0C1390098.png"))
->>>>>>> 3bd8801298a4d814ccc208a34ed45699b9065c1c
         f = open("log.txt", "a")
         f.write(
             "Feur : Message from {0.author}: {0.guild} - {0.channel}: {0.content}\n".format(
@@ -58,12 +54,8 @@ async def check_feur(message):
 async def check_quoi(message):
     q = check_quoi_message(message)
     if q:
-<<<<<<< HEAD
-        await message.channel.send("<@289867158438150154> - YOUR TIME !")
-=======
         id = dotenv.dotenv_values(".env")["PINGID"]
         await message.channel.send("<@" + id + "> - YOUR TIME !")
->>>>>>> 3bd8801298a4d814ccc208a34ed45699b9065c1c
         f = open("log.txt", "a")
         f.write(
             "Quoi : Message from {0.author}: {0.guild} - {0.channel}: {0.content}\n".format(
